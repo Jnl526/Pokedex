@@ -230,9 +230,10 @@ footer{
   p {
     font-size: 11px;
     text-align: right;
+    padding-top: 17px;
   }
   a{
-    color: white;
+    color: white !important;
   }
     &:before {
       content: "";
@@ -315,7 +316,7 @@ footer{
         background-color: $card-color-1;
         }
   }
-
+}
   //Media Queries
 
 @media #{$tablet} {

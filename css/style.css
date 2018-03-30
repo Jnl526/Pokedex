@@ -443,15 +443,17 @@ footer {
   display: flex;
   vertical-align: middle;
   color: #fff !important;
+  position: relative;
 }
 
 footer p {
   font-size: 11px;
   text-align: right;
+  padding-top: 17px;
 }
 
 footer a {
-  color: white;
+  color: white !important;
 }
 
 footer:before {
@@ -539,6 +541,10 @@ footer:before {
 
 .page-id-228 #pokeUp .carousel .carousel-item a {
   color: #000;
+}
+
+.page-id-228 footer:before {
+  background-color: #ef843c;
 }
 
 @media (max-width: 768px) {
