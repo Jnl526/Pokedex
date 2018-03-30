@@ -218,9 +218,15 @@ section {
 }
 
 
-.page-footer a{
-  color: white;
-   
+.page-footer{
+  p {
+    font-size: 11px;
+    padding-top: 37px;
+    text-align: center;
+  }
+  a{
+    color: white;
+  }
 }
 .page-id-228{
   .tab a {

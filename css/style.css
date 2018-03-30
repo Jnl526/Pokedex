@@ -428,6 +428,12 @@ section {
   background-size: 20px;
 }
 
+.page-footer p {
+  font-size: 11px;
+  padding-top: 37px;
+  text-align: center;
+}
+
 .page-footer a {
   color: white;
 }
