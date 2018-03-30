@@ -1,0 +1,552 @@
+.red {
+  background-color: #e33118 !important;
+}
+
+/* KEYFRAMES */
+@-webkit-keyframes animatedBackgroundL {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+@keyframes animatedBackgroundL {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: 0;
+  }
+}
+
+@-webkit-keyframes animatedBackgroundR {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+
+@keyframes animatedBackgroundR {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveL {
+  0% {
+    -webkit-transform: translateX(-600px) translateY(30%);
+            transform: translateX(-600px) translateY(30%);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(30%);
+            transform: translateX(0) translateY(30%);
+  }
+}
+
+@keyframes moveL {
+  0% {
+    -webkit-transform: translateX(-600px) translateY(30%);
+            transform: translateX(-600px) translateY(30%);
+  }
+  100% {
+    -webkit-transform: translateX(0) translateY(30%);
+            transform: translateX(0) translateY(30%);
+  }
+}
+
+/* Slide Right */
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+
+/* Fade In */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+/* Bounce */
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(6px);
+            transform: translateY(6px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: translateY(-490px) scale(1.6);
+            transform: translateY(-490px) scale(1.6);
+  }
+  100% {
+    -webkit-transform: translateY(50px) scale(0.71);
+            transform: translateY(50px) scale(0.71);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: translateY(-490px) scale(1.6);
+            transform: translateY(-490px) scale(1.6);
+  }
+  100% {
+    -webkit-transform: translateY(50px) scale(0.71);
+            transform: translateY(50px) scale(0.71);
+  }
+}
+
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+nav {
+  color: #fff;
+  background-color: white;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  -webkit-box-shadow: 0 3px 0 1px whitesmoke;
+          box-shadow: 0 3px 0 1px whitesmoke;
+}
+
+nav .nav-wrapper .logo {
+  width: 55%;
+}
+
+nav .nav-wrapper .logo nav {
+  color: #fff;
+  background-color: white;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  -webkit-box-shadow: 0 3px 0 1px whitesmoke;
+          box-shadow: 0 3px 0 1px whitesmoke;
+}
+
+nav .nav-wrapper ul a {
+  color: #353535;
+  text-transform: uppercase;
+}
+
+nav .nav-wrapper .img-wrapper {
+  display: inline-block;
+  height: 67px;
+}
+
+nav .nav-wrapper .img-wrapper .user {
+  width: 90px;
+  margin-top: -16px;
+  border: 2px solid;
+  /* border-radius: 13px; */
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(37% at 50% 43%);
+}
+
+#loading_page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99dbfe), color-stop(77%, white));
+  background: linear-gradient(to bottom, #99dbfe 0%, white 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99dbfe', endColorstr='#ffffff',GradientType=0 );
+}
+
+.main {
+  padding-top: 4em;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.backimg {
+  background: url(../images/floating_clouds_bk.png) repeat-x;
+  background-size: cover;
+  background-position: 0 0;
+  height: 100vh;
+  position: relative;
+  -webkit-animation: animatedBackgroundR 4s cubic-bezier(0.21, 0.21, 1, 1.02) infinite;
+  animation: animatedBackgroundR 4s linear infinite;
+}
+
+.frontimg {
+  background: url(../images/clouds.png);
+  background-position: 0px 100%;
+  background-repeat: repeat-x;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  -webkit-animation: animatedBackgroundL 4s linear infinite;
+  animation: animatedBackgroundL 3s linear infinite;
+}
+
+.frontimg img {
+  position: absolute;
+  bottom: -8px;
+}
+
+.midimg {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.midimg .pokeball_wrapper {
+  text-align: center;
+}
+
+.midimg .pokeball_wrapper .pokeball {
+  -webkit-animation: fadeIn 5s cubic-bezier(0, 0.03, 0, 0.02);
+          animation: fadeIn 5s cubic-bezier(0, 0.03, 0, 0.02);
+}
+
+.midimg .ground_wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 50px;
+  /* -webkit-animation: zoom 3.5s cubic-bezier(0, 0.03, 0, 0.02); */
+  /* -webkit-animation: zoom 3.5s cubic-bezier(0, 0.03, 0, 0.02); */
+  -webkit-animation: zoom 3.5s cubic-bezier(0, 0.03, 0, 0.02);
+          animation: zoom 3.5s cubic-bezier(0, 0.03, 0, 0.02);
+  -webkit-transform: translateY(50px) scale(0.71);
+  transform: translateY(50px) scale(0.71);
+}
+
+.midimg .ground_wrapper .ground,
+.midimg .ground_wrapper .pokemon {
+  position: absolute;
+  top: 0;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+.pokemon_grid,
+#pokemon_grid {
+  text-align: center;
+}
+
+.pokemon_grid .card,
+#pokemon_grid .card {
+  position: relative;
+  margin: 0.5rem 1rem 1rem 0;
+  /* background-color: #fff; */
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  width: 30%;
+  display: inline-block;
+}
+
+.pokemon_grid img,
+#pokemon_grid img {
+  width: 90%;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  -webkit-transition: all .9s ease-in-out;
+  transition: all .9s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.pokemon_grid img:hover,
+#pokemon_grid img:hover {
+  width: 90%;
+  -webkit-animation: none;
+  animation: bounce none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.pokemon_grid .p-icons,
+#pokemon_grid .p-icons {
+  padding: 0 14px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 10px;
+}
+
+.pokemon_grid .p-icons li,
+#pokemon_grid .p-icons li {
+  display: inline-block;
+  padding: 0 7px;
+}
+
+.pokemon_grid .p-icons i.swap:before,
+#pokemon_grid .p-icons i.swap:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/swap.png) no-repeat;
+  height: 17px;
+  width: 17px;
+  background-size: 20px;
+}
+
+.pokemon_grid .p-icons .collection,
+#pokemon_grid .p-icons .collection {
+  border: none;
+}
+
+.pokemon_grid .p-icons i.collection:before,
+#pokemon_grid .p-icons i.collection:before {
+  content: "";
+  display: inline-block;
+  background: url(../images/tiny-pkbl.png) no-repeat;
+  height: 20px;
+  width: 20px;
+  background-size: 20px;
+}
+
+.page-footer a {
+  color: white;
+}
+
+.page-id-228 .tab a {
+  color: #ef8525;
+}
+
+.page-id-228 .page-footer,
+.page-id-228 nav {
+  color: #fff;
+  background-color: #ef843c;
+}
+
+.page-id-228 .page-footer ul a,
+.page-id-228 nav ul a {
+  color: white;
+  text-transform: uppercase;
+}
+
+.page-id-228 .card {
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ef843c), color-stop(50%, #ffffff));
+  background: linear-gradient(to bottom, #ef843c 50%, #ffffff 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.page-id-228 .card img,
+.page-id-228 .card img:hover {
+  width: 90%;
+  -webkit-animation: none;
+  animation: bounce none;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.page-id-228 .description {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 3em;
+}
+
+.page-id-228 .description h3 {
+  text-align: center;
+}
+
+.page-id-228 .stats {
+  text-align: center;
+}
+
+.page-id-228 .stats li {
+  display: inline-block;
+  padding: 0 38px;
+  text-align: center;
+}
+
+.page-id-228 #evolve {
+  background-color: #ef843c;
+  color: #fff;
+  padding: 0;
+}
+
+.page-id-228 #pokeUp .carousel {
+  height: 460px;
+}
+
+.page-id-228 #pokeUp .carousel .carousel-item a {
+  color: #000;
+}
+
+.page-id-228 .footer-copyright {
+  background-color: #ef8525 !important;
+}
+
+.page-footer {
+  padding: 20px 0 20px;
+  color: #fff;
+  background-color: #ee6e73;
+  height: 50px;
+}
+
+.page-footer .footer-copyright {
+  overflow: hidden;
+  min-height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #e33118;
+  margin-top: -53px;
+  -webkit-clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+}
+
+@media (max-width: 600px) {
+  #pokemon_grid {
+    text-align: center;
+  }
+  #pokemon_grid .card {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #pokemon_grid .card {
+    width: 46%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
