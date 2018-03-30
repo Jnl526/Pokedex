@@ -1,7 +1,5 @@
-$(document).ready(function(){
-	$('.carousel').carousel();
-	$('.dropdown-trigger').dropdown();
-  });
+M.AutoInit();
+
 
 
 
@@ -50,7 +48,7 @@ let pokeDex = function(myTrainer)  {
 
 		$('#pokemon_grid .col').append(pokeeCard);
 		$(pokeeCard).append(pokeeImg).append(pokeeId).append(pokeeIcons);
-
+		$('.dropdown-trigger').dropdown();
           	  console.log(pokeeId);
 	 }
 	 

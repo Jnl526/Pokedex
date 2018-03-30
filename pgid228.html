@@ -4,13 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Houndour</title>
+        <title>Pokedex</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
         <!--Import materialize.css-->
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css">
-        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
 <body class="page-id-228">
@@ -49,26 +47,25 @@
                                   
                                           </div>
                             </div> <!-- end grid -->
-                <div class="pokemon-grid">
+                <div class="pokemon-grid">   
                     <div class="">
                         <div class="stats">
                             <div class="row">
                                 <div class="col s12">
-                                  <ul class="tabs">
-                                        <li class="tab col s3"><a class="active" href="#test2">HP</a></li>
-                                    <li class="tab col s3"><a href="#test1">ATTACK</a></li>
-                                    <li class="tab col s3"><a href="#test3">DEFENSE</a></li>
-                                    <li class="tab col s3"><a href="#test4">ABILITIES</a></li>
+                                  <ul>
+                                    <li class=" col s3"><p>60<br><span>HP</span></p></li>
+                                    <li class=" col s3"><p>45<br><span>ATTACK</span></p></li>
+                                    <li class=" col s3"><p>30<br><span>DEFENSE</span></p></li>
+                                    <li class=" col s3"><p><br><a class='dropdown-trigger' href='#' data-target='ability'>ABILITIES</a></p>
+                                                <!-- Dropdown Structure -->
+                                        <ul id='ability' class='dropdown-content'>
+                                                <li><a href="#!">Unnerve</a></li>
+                                                <li><a href="#!">Flash-fire</a></li>
+                                                <li><a href="#!">Early-bird</a></li>
+                                            </ul>
+                                        </li>
                                   </ul>
                                 </div>
-                                <div id="test1" class="col s12">45</div>
-                                <div id="test2" class="col s12">60</div>
-                                <div id="test3" class="col s12">30</div>
-                                <div id="test4" class="col s12"><ul>
-                                    <li>unnerve</li>
-                                    <li>flash-fire,</li>
-                                    <li>early-bird</li>
-                                </ul></div>
                               </div>
                         </div>
                     </div>
@@ -89,24 +86,21 @@
                                     
                                   </div>
                     </div>
+                    
                 </section>
 
         </div>
   
-    <footer class="page-footer">
-      <div class="container">
-            <div class="footer-copyright">
-                <div class="container">
-                Made by <a href="#">My Pokee</a>
-                </div>
-      </div>
-    </footer>
+        <footer>
+			<div class="container">
+				<p class="copyright">Made by <a href="#">My Pokee</a></p>		  
+			</div>
+	</footer>	
   
   
     <!--  Scripts-->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js"></script>
-	<script type="text/javascript" src="main.js"></script>  
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

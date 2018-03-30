@@ -237,6 +237,10 @@ h6 {
   text-transform: uppercase;
 }
 
+a {
+  color: #ef8525;
+}
+
 img {
   border: 0;
   max-width: 100%;
@@ -488,7 +492,9 @@ footer:before {
   z-index: -1;
 }
 
-.page-id-228 .tab a {
+.page-id-228 a,
+.page-id-228 #ability a,
+.page-id-228 .carousel-item a {
   color: #ef8525;
 }
 
@@ -539,6 +545,7 @@ footer:before {
 .page-id-228 .stats li {
   display: inline-block;
   text-align: center;
+  padding: 6px;
 }
 
 .page-id-228 #evolve {
@@ -580,6 +587,9 @@ footer:before {
   }
   .page-id-228 .description {
     padding: 0;
+  }
+  .page-id-228 .stats li {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

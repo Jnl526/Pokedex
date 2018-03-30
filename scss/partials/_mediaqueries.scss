@@ -2,28 +2,6 @@ $phone: "(max-width: 600px)";
 $tablet: "(max-width: 768px) ";
 $desktop: "(min-width: 1200px)";
 
-//Media Queries
 
-@media #{$tablet} {
-    #pokemon_grid .card {
-      width: 46%;
-    }
-  }
-  @media #{$phone} {
-    .pokemon_grid,
-    #pokemon_grid{
-      text-align: center;
-      width: auto;
-      .card {
-        width: auto;
-        margin: 0 auto;
-      }
-    } 
-  }
-   @media #{$desktop} {
-    .container {
-      width: 85%;
-    }
-  }
   
   
