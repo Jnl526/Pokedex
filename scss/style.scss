@@ -225,7 +225,8 @@ footer{
   height: 60px;
   display: flex;
   vertical-align: middle;
-  color: #fff;
+  color: #fff !important;
+  position: relative;
   p {
     font-size: 11px;
     text-align: right;
@@ -309,6 +310,10 @@ footer{
         }
       }  
     }
+    footer{
+        &:before {
+        background-color: $card-color-1;
+        }
   }
 
   //Media Queries

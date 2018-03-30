@@ -2,6 +2,10 @@
   background-color: #e33118 !important;
 }
 
+.or {
+  background-color: #ef843c !important;
+}
+
 /* KEYFRAMES */
 @-webkit-keyframes animatedBackgroundL {
   from {
@@ -192,31 +196,6 @@
   100% {
     -webkit-transform: translateY(50px) scale(0.71);
             transform: translateY(50px) scale(0.71);
-  }
-}
-
-@media (max-width: 768px) {
-  #pokemon_grid .card {
-    width: 46%;
-  }
-}
-
-@media (max-width: 600px) {
-  .pokemon_grid,
-  #pokemon_grid {
-    text-align: center;
-    width: auto;
-  }
-  .pokemon_grid .card,
-  #pokemon_grid .card {
-    width: auto;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 85%;
   }
 }
 
@@ -463,7 +442,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   vertical-align: middle;
-  color: #fff;
+  color: #fff !important;
 }
 
 footer p {
