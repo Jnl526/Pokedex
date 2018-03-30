@@ -176,17 +176,11 @@ section {
    
   img {
     width: 90% ;
+    
+  &:hover {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
-    transition: all .9s ease-in-out;
-    transform: scale(1);
   }
-  img:hover {
-    width: 90% ;
-    -webkit-animation: none;
-    animation: bounce none;
-    transform: scale(1.1);
-    
   }
   .p-icons {
     padding: 0 14px;
