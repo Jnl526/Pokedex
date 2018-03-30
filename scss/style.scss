@@ -217,22 +217,39 @@ section {
   
 }
 
-
-.page-footer{
+footer{
+  height: 60px;
+  display: flex;
+  vertical-align: middle;
+  color: #fff;
   p {
     font-size: 11px;
-    padding-top: 37px;
-    text-align: center;
+    text-align: right;
   }
   a{
     color: white;
   }
+    &:before {
+      content: "";
+    position: absolute;
+    padding: 18px 0;
+    width: 60%;
+    height: 55px;
+    background-color: #e33118;
+    top: -30px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+    z-index: -1;
+    }
 }
 .page-id-228{
   .tab a {
     color: rgb(239, 133, 37);
   }
-  
   .page-footer,
   nav {
     color: #fff;
@@ -241,7 +258,7 @@ section {
       color: white;
       text-transform: uppercase;
     }
-     } 
+  } 
      .card{
       background: -moz-linear-gradient(top, #ef843c 50%, #ffffff 50%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top, #ef843c 50%,#ffffff 50%); /* Chrome10-25,Safari5.1-6 */
@@ -251,78 +268,44 @@ section {
         width: 90% ;
         -webkit-animation: none;
         animation: bounce none;
-        transform: none;
-        
+        transform: none; 
       }
      }
-  .description{
-    width: $col8;
-    display: inline-block;
-    vertical-align: top;
-    padding: 3em;
-      h3{
+    .description{
+      width: $col8;
+      display: inline-block;
+      vertical-align: top;
+      padding: 3em;
+        h3{
+          text-align: center;
+        }
+    }
+    .stats{
+      text-align: center;
+      li{
+        display: inline-block;
         text-align: center;
       }
-  }
-.stats{
-  text-align: center;
-  li{
-    display: inline-block;
-    padding: 0 38px;
-    text-align: center;
-  }
-  
-}
-
-#evolve{
-  background-color: #ef843c;
-  color: #fff;
-  padding: 0;
-}
-#pokeUp{
-  .carousel {
-    height: 460px;
-    .carousel-item a {
-      color: #000;
-  }
-}
-}
-.footer-copyright {
-  background-color: #ef8525 !important;
-}
-}
-.page-footer {
-  padding: 20px 0 20px;
-  color: #fff;
-  background-color: #ee6e73;
-  height: 50px;
-.footer-copyright {
-  overflow: hidden;
-  min-height: 84px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 0px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #e33118 ;
-  margin-top: -53px;
-  -webkit-clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
-}
-}
-//Media Queries
-@media #{$phone} {
-  #pokemon_grid{
-    text-align: center;
-    .card {
-      width: auto;
-      margin: 0 auto;
+      
     }
-  } 
-}
+
+    #evolve{
+      background-color: #ef843c;
+      color: #fff;
+      padding: 0;
+    }
+    #pokeUp{
+      .carousel {
+        height: 460px;
+          .carousel-item a {
+            color: #000;
+        }
+      }  
+    }
+  }
+
+  //Media Queries
+
 @media #{$tablet} {
   #pokemon_grid .card {
     width: 46%;
@@ -332,4 +315,20 @@ section {
   .container {
     width: 85%;
   }
+}
+@media #{$phone} {
+  .pokemon_grid,
+  #pokemon_grid{
+    text-align: center;
+    width: auto;
+    .card {
+      width: auto;
+      margin: 0 auto;
+    }
+  } 
+  .page-id-228 {
+    .description {
+    padding: 0;
+    }
+}
 }

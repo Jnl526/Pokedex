@@ -195,6 +195,31 @@
   }
 }
 
+@media (max-width: 768px) {
+  #pokemon_grid .card {
+    width: 46%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pokemon_grid,
+  #pokemon_grid {
+    text-align: center;
+    width: auto;
+  }
+  .pokemon_grid .card,
+  #pokemon_grid .card {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 85%;
+  }
+}
+
 body,
 html {
   height: 100%;
@@ -428,14 +453,39 @@ section {
   background-size: 20px;
 }
 
-.page-footer p {
-  font-size: 11px;
-  padding-top: 37px;
-  text-align: center;
+footer {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  vertical-align: middle;
+  color: #fff;
 }
 
-.page-footer a {
+footer p {
+  font-size: 11px;
+  text-align: right;
+}
+
+footer a {
   color: white;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  padding: 18px 0;
+  width: 60%;
+  height: 55px;
+  background-color: #e33118;
+  top: -30px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
+  z-index: -1;
 }
 
 .page-id-228 .tab a {
@@ -488,7 +538,6 @@ section {
 
 .page-id-228 .stats li {
   display: inline-block;
-  padding: 0 38px;
   text-align: center;
 }
 
@@ -506,44 +555,6 @@ section {
   color: #000;
 }
 
-.page-id-228 .footer-copyright {
-  background-color: #ef8525 !important;
-}
-
-.page-footer {
-  padding: 20px 0 20px;
-  color: #fff;
-  background-color: #ee6e73;
-  height: 50px;
-}
-
-.page-footer .footer-copyright {
-  overflow: hidden;
-  min-height: 84px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 10px 0px;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #e33118;
-  margin-top: -53px;
-  -webkit-clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(9% 0, 91% 0, 100% 100%, 0% 100%);
-}
-
-@media (max-width: 600px) {
-  #pokemon_grid {
-    text-align: center;
-  }
-  #pokemon_grid .card {
-    width: auto;
-    margin: 0 auto;
-  }
-}
-
 @media (max-width: 768px) {
   #pokemon_grid .card {
     width: 46%;
@@ -553,6 +564,22 @@ section {
 @media (min-width: 1200px) {
   .container {
     width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .pokemon_grid,
+  #pokemon_grid {
+    text-align: center;
+    width: auto;
+  }
+  .pokemon_grid .card,
+  #pokemon_grid .card {
+    width: auto;
+    margin: 0 auto;
+  }
+  .page-id-228 .description {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
